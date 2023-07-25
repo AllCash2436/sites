@@ -1,0 +1,275 @@
+body{
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #28224B;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+
+}
+
+
+/*Навигация*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav a {
+    flex: 1;
+    font-size: 16px;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    padding: 10px 35px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 6px;
+    border-color: #35B8BE;
+}
+
+.nav a:first-child{
+    margin-left: 10px;
+}
+
+.nav a:last-child{
+    margin-right: 10px;
+}
+
+.btn{
+    background-color: #fff;
+    transition: background .3s linear;
+}
+
+.btn:hover{
+    background-color: #35B8BE;
+    color: #fff;
+}
+
+
+/*Контент*/
+
+.content {
+    display: flex;
+    flex: 1;
+    margin: 10px 0;
+    padding: 5px;
+    background: url("../images/BG%20Shape.png") no-repeat;
+    background-size: cover;
+
+}
+
+.left{
+    flex: 1;
+    padding: 15px;
+    margin-top: 130px;
+    border-color: #28224B;
+    font-size: 60px;
+    /*  border: solid;*/
+    /*  border-width: 1px;*/
+}
+
+.center {
+    flex: 2;
+    padding: 8px;
+    margin: 0 9px;
+    position: relative;
+    border-color: #28224B;
+    font-size: 28px;
+    /*
+    border: solid;
+    border-width: 1px;
+    */
+}
+
+.center img {
+    max-width: 65%;
+    height: auto;
+}
+
+.center p {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 1em;
+}
+
+.right {
+    flex: 1;
+    padding: 13px;
+    border: solid;
+    border-width: 2px;
+    border-color: #35B8BE;
+    color: #08090A;
+    text-align: center;
+    font-size: 17px;
+}
+
+.menu{
+    font-size: 24px;
+    color: #28224B;
+    text-decoration: none;
+    padding: 3px 35px;
+    border: solid;
+    border-width: 2px;
+    border-color: #35B8BE;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: background .3s linear;
+}
+
+.menu:hover{
+    background-color: #35B8BE;
+    color:#fff;
+}
+
+.button{
+    margin-top: 170px;
+    font-size: 24px;
+    cursor: pointer;
+    border-color: #35B8BE;
+    border-radius: 6px;
+    border-width: 10px;
+    background-color: #F5FBFC;
+    padding: 8px 35px;
+    text-decoration: none;
+    transition: background .3s linear;
+}
+
+button:hover{
+    background-color: #35B8BE;
+    color:#F5FBFC;
+    border-color: #cdf2f2;
+}
+
+.menu_poz{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/*Подвал*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone{
+    flex: 1;
+    padding: 3px 70px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-color: #35B8BE;
+    border-radius: 6px;
+    background-color: #35B8BE;
+    color: #FFF;
+    transition: background .3s linear;
+}
+
+.phone:hover{
+    background-color: #fff;
+    color:#28224B;
+    font-weight: 700;
+}
+
+.address {
+    flex: 1;
+    padding: 3px 70px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-color: #35B8BE;
+    border-radius: 6px;
+    background-color: #35B8BE;
+    color: #FFF;
+    margin-left: 3px;
+    transition: background .3s linear;
+}
+
+.address:hover{
+    background-color: #fff;
+    color:#28224B;
+    font-weight: 700;
+}
+
+
+
+/*МегаАдаптация*/
+
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+  .nav a {
+    flex: none;
+    margin: 0.5em 0;
+    width: 90%;
+    font-size: 18px;
+}
+
+  .nav a:first-child{
+    margin-left: 0px;
+}
+
+  .nav a:last-child{
+    margin-right: 0px;
+}
+
+  .content {
+    flex-direction: column;
+}
+
+  .left{
+    flex: none;
+    width: 95%;
+    padding: 1em;
+    margin: 0;
+}
+
+  .center, .right {
+    flex: none;
+    width: 95%;
+    padding: 1em;
+    font-size: 20px;
+}
+
+  .center img {
+    min-width: 200px;
+    height: auto;
+}
+
+  .center p {
+    position: static;
+    margin: 1em 0;
+    padding: 0;
+}
+
+  .footer {
+    padding: 1em;
+}
+
+  .phone, .address{
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    padding: 3px 20px;
+}
+
+}

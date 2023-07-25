@@ -1,0 +1,23 @@
+table, th, td {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    background-color: #8e3cd4;
+    font-size: 16px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: floralwhite;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e4b8f5;
+}
+
+#a{
+    text-align: center;
+}

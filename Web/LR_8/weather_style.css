@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 46px;
+}
+
+.header__inner{
+    color: #fff;
+    font-style: oblique;
+}
+
+button {
+  margin: 25px 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #35B8BE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.address-book {
+  display: none;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+  width: 300px;
+}
+
+.address-book th, .address-book td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.address-book th {
+  background-color: #35B8BE;
+  color: #fff;
+}
+
+.address-book a {
+  color: #35B8BE;
+  text-decoration: none;
+}

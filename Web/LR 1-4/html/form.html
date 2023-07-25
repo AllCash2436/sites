@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <title>Бронироввние номер в гостинице</title>
+</head>
+<body>
+    <form action="#" method="post">
+
+    <fieldset class="contact_info">
+    <legend>Контактная информация:</legend>
+        <div class="main">
+            <div class="field">
+            <label for="fio">ФИО<span>*</span></label>
+            <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required><br><br>
+            </div>
+
+            <div class="field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (812)-000-00-00"><br><br>
+            </div>
+
+            <div class="field">
+            <label for="email">E-mail<span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"required>
+            </div>
+        </div>
+    </fieldset><br>
+
+    <fieldset class="private_info">
+    <legend>Личная инфорация:</legend>
+      <div class="main">
+           <div class="field">
+            <label for="gender">Пол:</label>
+            <select name="gender" id="gender">
+            <option value="man">мужской</option>
+            <option value="woman">женский</option>
+            </select><br><br>
+           </div>
+
+           <div class="field">
+            <label for="age">Возраст<span>*</span></label>
+            <input type="date" id="age" name="age" required><br><br>
+           </div>
+
+           <div class="field">
+            <label for="password">Пароль<span>*</span></label>
+            <input type="password" id="password" name="password" minlength="8" required>
+           </div>
+     </div>
+    </fieldset><br><br>
+
+      <fieldset class="radio_but">
+      <legend>Тип номера:</legend>
+            <label><input type="radio" name="room-type" value="single" required>Одноместный</label>
+            <label><input type="radio" name="room-type" value="double">Двухместный</label>
+            <label><input type="radio" name="room-type" value="triple">Трёххместный</label>
+      </fieldset><br>
+
+      <fieldset class="radio_but2">
+      <legend>Категория номера:</legend>
+            <label><input type="radio" name="room-category" value="standart" required>Стандартный</label><br><br>
+            <label><input type="radio" name="room-category" value="luxe">Люкс</label><br><br>
+            <label><input type="radio" name="room-category" value="president">Президентский</label>
+      </fieldset><br><br>
+
+       <fieldset class="radio_but3">
+       <legend>Опции:</legend>
+            <label><input type="checkbox" name="options" value="breakfast">Бесплатная отмена</label>
+            <label><input type="checkbox" name="options" value="wifi">Кешбэк по карте постоянного гостя</label>
+      </fieldset><br>
+
+      <fieldset class="radio_but4">
+      <legend>Дополнительные услуги:</legend>
+            <label><input type="checkbox" name="extra-services" value="breakfast">Завтрак</label>
+            <label><input type="checkbox" name="extra-services" value="wifi">Wi-Fi</label>
+      </fieldset><br><br>
+
+      <fieldset class="radio_but4">
+            <legend>Сроки пребывания:</legend>
+            <label for="check-in-date">Дата заезда<span>*</span></label>
+            <input type="date" id="check-in-date" name="check-in-date" required><br><br>
+            <label for="check-out-date">Дата выезда<span>*</span></label>
+            <input type="date" id="check-out-date" name="check-out-date" required>
+      </fieldset><br><br>
+
+      <label for="comment">Комментарий к бронированию:</label><br>
+      <textarea name="comment" id="comment" cols="90" rows="10" placeholder="Необязательно к заполнению..."></textarea><br><br>
+
+      <button type="submit" class="btn btn--red">Забронировать</button>
+    </form>
+</body>
+</html>

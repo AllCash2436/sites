@@ -1,0 +1,74 @@
+body{
+    background: url(https://top-fon.com/uploads/posts/2023-02/1675590913_top-fon-com-p-fon-dlya-prezentatsii-svetlii-odnotonnii-1.jpg);
+}
+
+.contact_info{
+   display: block;
+   width: 250px;
+}
+
+.private_info{
+   display: block;
+   width: 250px;
+}
+
+.main {
+    float:left
+}
+
+.field {
+    clear:both;
+    text-align:right;
+    line-height:15px;
+}
+
+span{
+    color: red;
+}
+
+label {
+    float:left;
+    padding-right:10px;
+}
+
+.radio_but{
+    width: 450px;
+}
+
+.radio_but2{
+    width: 200px;
+}
+
+.radio_but3{
+    width: 500px;
+}
+
+.radio_but4{
+    width: 200px;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background .1s linear;
+
+}
+
+.btn--red{
+    background-color: #e84545;
+}
+
+.btn--red:hover{
+    background-color: #b43838;
+}

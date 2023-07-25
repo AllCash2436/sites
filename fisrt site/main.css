@@ -1,0 +1,53 @@
+/*тут мы все расставляем, наводим красоту*/
+body 
+{
+	padding: 0; /*внутренний отступ*/
+	margin: 0; /*внешний отступ*/
+	font-family: Tahoma, serif; /*стиль текста на всем сайте*/
+}
+
+header, footer 
+{
+	background: #424242;
+	padding: 25px 0;
+}
+
+h1
+{
+	text-align: center; /*выравнивание по центру*/
+	color: white;
+	font-size: 50px;
+}
+
+div 
+{
+ width: 1200px;
+ margin: 0 auto;
+ overflow: hidden; /*как я понял, это сделано для того, чтобы footer остался на месте*/
+}
+
+aside, main 
+{
+	width: 50%; /*aside и main наследуются от div => их параметры не могут превышать параметры div. Эта строчка автоматически считает, 50% от значения в div (1200px)*/
+    float: left ; /*картинка и текст пошли влево*/
+}
+
+aside img 
+{
+	/*width: 100%; это значение идет от значения в классе aside,main (100% = 50% aside,main = 600px т.к в div 1200p)*/
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer p
+{
+text-align: center; /*выравнивание по центру*/
+	color: white;
+	font-size: 15px;
+}
+
+footer button 
+{
+	text-align: center; /*выравнивание по центру*/
+}

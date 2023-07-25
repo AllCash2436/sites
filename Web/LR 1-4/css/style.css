@@ -1,0 +1,144 @@
+/*--------------------------------------------------------*/
+/*body 1_страница*/
+
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+
+}
+
+.main{
+    margin: 0px;
+    background: url(pattern-zig-zag-corners-vert.png);
+    background-repeat: repeat;
+}
+
+.full_stix{
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #fff;
+    background: url(pattern-zig-zag-corners-vert.png);
+    background-repeat: space repeat;
+}
+
+.stix_1{
+    border-style: solid;
+    border-color: #b9a538;
+    border-width: thick;
+    border-radius: 25px;
+    width: 500px;
+    color: #125019;
+    line-height: 32px;
+    text-decoration: underline;
+}
+
+.stix_2{
+    border-style: dotted;
+    border-color: #7ddea6;
+    border-width: thick;
+    border-radius: 15px;
+    width: 500px;
+    color: #18107b;
+}
+
+
+.but{
+    font-weight: bold;
+    color: #812c2c;
+}
+
+/*--------------------------------------------------------*/
+/*intro 2_страница*/
+
+.main2{
+
+    font-size:18px;
+    background: url(https://klike.net/uploads/posts/2022-11/1669437999_1.jpg);
+    background-size: cover;
+}
+
+h1{
+    border-bottom: solid;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+    width: 550px;
+}
+
+h2{
+    letter-spacing: 0.5em;
+}
+
+.text_left{
+   text-indent: 15px;
+}
+
+.text_between_words{
+    word-spacing: 1rem;
+}
+
+blockquote{
+    text-transform: uppercase;
+}
+
+sub{
+    font-size: 14px;
+}
+
+sup{
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------*/
+/*body 2_страница*/
+
+.fig{
+    text-align: center;
+    height: auto;
+}
+
+.ekz{
+    background-color: #aac6c7;
+    width: 550px;
+}
+
+.spisok{
+    background: #7fdfe3 url(background-stude.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*использовать отдельно!*/
+}
+
+.num{
+    font-size: 24px;
+    color: #15158d;
+}
+
+.markers{
+    list-style-type: "\1F44D";
+}
+
+ul{
+list-style-position: inside
+}
+
+.border_ref{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: groove;
+    border-color: #a19ad6;
+    border-width: medium;
+    border-radius: 5px;
+    width: 425px;
+    opacity: .75;
+    font-weight: bold;
+
+    transition: opacity .2s linear;
+}
+
+.border_ref:hover{
+    opacity: 1;
+}

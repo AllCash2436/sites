@@ -1,0 +1,74 @@
+<!-- тут мы делаем скелет, наполняем сайт содержимым  и тд -->
+<!DOCTYPE html>
+<html>
+<head> <!-- служебная инфа о сайте --> 
+	<meta charset="utf-8"> <!-- тег для распознавания русского текста  -->
+	<title>Мой первый сайт попытка 1</title> <!-- заголовок страницы сайта  -->
+	<link rel="stylesheet"  href="main.css"> <!-- файл стилей? сюда мы подключили файл main.css-->
+</head>
+<body> <!-- контент сайта -->
+
+
+<header>
+	<h1>Мой профиль</h1>
+</header>
+
+  <div>
+	<aside>
+		<img src="https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/b08488d2172a214287cb69acc3651564.jpg">
+	</aside>
+
+	<main>
+		<h2>Дмитрий Васильев</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+			Тут должен был быть текст...
+		</p>
+
+		<p>
+			Социальные сети:
+		</p>
+
+		<ul>
+			<li>
+				<a href="https://www.youtube.com/watch?v=Sh-3gT0KPKo">YouTube</a>
+			</li>
+
+			<li>
+				<a href="https://vk.com/20sudoroga01">Это я</a>
+			</li>
+		</ul>
+			<input type="button" onclick="javascript:changeColor();" value="Change background color"/>
+
+			<script type="text/javascript">
+			var colorArray = [ "#000", "#fff", "#eee" ]; // массив с цветами
+var i = 0; // итератор
+
+function changeColor(){
+    document.body.style.background = colorArray[i]; 
+    i++;
+    if( i > colorArray.length - 1){
+        i = 0;
+    }
+}
+			</script>
+		
+	</main>
+  </div>
+
+<footer>
+	<p>
+		Дмитрий Васильев, 2022
+	</p>
+</footer>
+
+</body>
+</html>
